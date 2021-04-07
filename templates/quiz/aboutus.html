@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  <center>
+  <div class="bg-light py-5">
+    <div class="container py-5">
+      <div class="row mb-4 ml-5">
+        <div class="col-lg-5">
+          <h2 class="display-4 font-weight-light text-right"> Developers..</h2>
+        </div>
+      </div>
+  
+      <div class="row text-center">
+        <div class="col-xl-2 col-sm-4 mb-5" ></div>
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-7 mb-5" >
+          <div class="bg-primary rounded shadow-sm py-5 px-4"><img src="{% static "image/anurag.jpeg" %}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0 text-light">Anurag Singh </h5><span class="small text-uppercase text-light">TE COMP B 30</span>
+          </div>
+        </div>
+        <!-- End-->
+  
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-7 mb-5">
+          <div class="bg-primary rounded shadow-sm py-5 px-4"><img src="{% static "image/aayushi.jpg" %}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0 text-light">Aayushi Sarda </h5><span class="small text-uppercase text-light">TE COMP B 15</span>
+           
+          </div>
+        </div>
+        <!-- End-->
+  
+        <!-- Team item-->
+        <div class="col-xl-3 col-sm-7 mb-5">
+          <div class="bg-primary rounded shadow-sm py-5 px-4"><img src="{% static "image/harsh.jpg" %}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"> 
+		  <h5 class="mb-0 text-light">Harsh Singh</h5><span class="small text-uppercase text-light">TE COMP B 31</span>
+          </div>
+        </div>
+        <!-- End-->
+        <div class="col-xl-2 col-sm-4 mb-5" ></div>
+  
+      </div>
+    </div>
+  </div>
+  
+    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    
+    <p class="lead">We Provide Platform For Students To practice Questions  <br> Teacher can add course/exam to System and Questions to that course.</p>
+    <hr class="my-4">
+  
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>
